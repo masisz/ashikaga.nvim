@@ -1,43 +1,57 @@
+-- https://github.com/EmmanuelOga/columns/blob/master/utils/color.lua
+
 local M = {}
 
 function M.to_rgb(h, s, l)
-	h = h % 360
-	s = s / 100
-	l = l / 100
-
-	local c = (1 - math.abs(2 * l - 1)) * s
-	local x = c * (1 - math.abs((h / 60) % 2 - 1))
-	local m = l - c / 2
-
+	--- @type number, number, number
 	local r, g, b
-	if h < 60 then
-		r, g, b = c, x, 0
-	elseif h < 120 then
-		r, g, b = x, c, 0
-	elseif h < 180 then
-		r, g, b = 0, c, x
-	elseif h < 240 then
-		r, g, b = 0, x, c
-	elseif h < 360 then
-		r, g, b = x, 0, c
+
+	if s == 0 then
+		r, g, b = l, l, l -- achromatic
 	else
-		r, g, b = c, 0, x
+		--- @param p number
+		--- @param q number
+		--- @param t number
+		local function hue2rgb(p, q, t)
+			if t < 0 then
+				t = t + 1
+			end
+			if t > 1 then
+				t = t - 1
+			end
+			if t < 1 / 6 then
+				return p + (q - p) * 6 * t
+			end
+			if t < 1 / 2 then
+				return q
+			end
+			if t < 2 / 3 then
+				return p + (q - p) * (2 / 3 - t) * 6
+			end
+			return p
+		end
+
+		--- @type number
+		local q
+		if l < 0.5 then
+			q = l * (1 + s)
+		else
+			q = l + s - l * s
+		end
+		local p = 2 * l - q
+
+		r = hue2rgb(p, q, h + 1 / 3)
+		g = hue2rgb(p, q, h)
+		b = hue2rgb(p, q, h - 1 / 3)
 	end
 
-	r = math.floor((r + m) * 255)
-	g = math.floor((g + m) * 255)
-	b = math.floor((b + m) * 255)
-
-	return r, g, b
-end
-
-function M.rgb_to_hex(r, g, b)
-	return string.format("#%02X%02X%02X", r, g, b)
+	return r * 255, g * 255, b * 255
 end
 
 function M.hsl_to_hex(h, s, l)
-	local r, g, b = M.to_rgb(h, s, l)
-	return M.rgb_to_hex(r, g, b)
+	local r, g, b = M.to_rgb(h / 360, s / 100, l / 100)
+
+	return string.format("#%02x%02x%02x", r, g, b)
 end
 
 return M
