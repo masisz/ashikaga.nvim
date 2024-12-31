@@ -1,3 +1,4 @@
+-- load by lualine/themes/ashikaga.lua
 return function()
 	local ashikaga = {}
 	local color = require("ashikaga.lib.base_color")
