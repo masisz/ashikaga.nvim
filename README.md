@@ -19,6 +19,7 @@ Also, I love [LazyVim](https://www.lazyvim.org). This color scheme is designed t
   - neotree
   - snacks
   - markdown
+  - gitsigns
 
 ## 🚀Instllation
 

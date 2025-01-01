@@ -19,6 +19,7 @@
   - neotree
   - snacks
   - markdown
+  - gitsigns
 
 ## 🚀インストール
 
