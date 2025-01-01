@@ -26,6 +26,12 @@ LazyVim
 
 ```lua
 {
+  "LazyVim/LazyVim",
+  opts = {
+    colorscheme = "ashikaga",
+  },
+},
+{
   "masisz/ashikaga.nvim",
   name = "ashikaga",
   opts = {
