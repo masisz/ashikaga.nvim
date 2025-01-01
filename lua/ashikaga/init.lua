@@ -15,12 +15,6 @@ function M.setup(config)
 	vim.g.colors_name = "ashikaga"
 
 	require("ashikaga.colors").setup()
-
-	if M.config.transparent == true then
-		local util = require("ashikaga.lib.utils")
-		util.highlight("Normal", { bg = "NONE" })
-		util.highlight("NormalFloat", { bg = "NONE" })
-	end
 end
 
 return M
