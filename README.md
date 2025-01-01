@@ -22,7 +22,7 @@ Also, I love [LazyVim](https://www.lazyvim.org). This color scheme is designed t
 
 ## 🚀Instllation
 
-Lazy.nvim
+LazyVim
 
 ```lua
 {
