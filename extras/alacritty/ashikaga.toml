@@ -1,9 +1,9 @@
 [colors.primary]
 background = '#182833'
-foreground = '#a5a5a5'
+foreground = '#bfa8d5' # text
 
 [colors.normal]
-black = '#182833'
+black = '#a5a5a5'
 red = '#c44f4f'
 green = '#75bc84'
 yellow = '#cdc097'
@@ -13,7 +13,7 @@ cyan = '#94bacb'
 white = '#ebe9df'
 
 [colors.bright]
-black = '#303233'
+black = '#bfbfbf'
 red = '#d95757'
 green = '#86d998'
 yellow = '#d9cda0'
