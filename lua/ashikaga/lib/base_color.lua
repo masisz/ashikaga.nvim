@@ -11,7 +11,7 @@ COLOR.ask = {
 	light_gray = hsl.hsl_to_hex(0, 0, 75),
 
 	-- ashikaga colors
-	hanabi_night = hsl.hsl_to_hex(205, 35, 15),
+	hanabi_night = hsl.hsl_to_hex(202, 10, 15),
 	flower_fuji = hsl.hsl_to_hex(270, 35, 75),
 	sky = hsl.hsl_to_hex(199, 35, 69),
 	watarase_blue = hsl.hsl_to_hex(216, 35, 60),
