@@ -7,7 +7,6 @@ function M.setup()
 	-- code
 	util.highlight("@field", { fg = color.ask.omugi_gold })
 	util.highlight("@property", { fg = color.ask.sky })
-	util.highlight("@keyword", { fg = color.ask.flower_fuji })
 	util.highlight("@method", { fg = color.ask.watarase_blue })
 	util.highlight("@type", { fg = color.ask.omugi_gold })
 	util.highlight("@constructor", { fg = color.ask.omugi_gold })
@@ -18,6 +17,11 @@ function M.setup()
 	util.highlight("@variable.parameter.builtin", { fg = color.ask.orihime_red })
 	util.highlight("@variable.member", { fg = color.ask.sky })
 	util.highlight("@punctuation.bracket", { fg = color.ask.gray })
+
+	util.highlight("@keyword", { fg = color.ask.flower_fuji })
+	util.highlight("@keyword.import", { fg = color.ask.flower_fuji })
+	util.highlight("@keyword.coroutine", { fg = color.ask.flower_fuji })
+	util.highlight("@keyword.function", { fg = color.ask.watarase_blue })
 
 	local todo = { fg = color.ask.white, bg = color.ask.watarase_blue }
 	local note = { fg = color.ask.white, bg = color.ask.flower_fuji }
