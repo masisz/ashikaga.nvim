@@ -18,7 +18,8 @@
           "background": "#5C8AA6",
           "foreground": "#E5E7EB",
           "properties": {
-            "style": "folder"
+            "style": "full",
+            "home_icon": "~"
           }
         },
         {
