@@ -10,18 +10,10 @@
       "newline": true,
       "segments": [
         {
-          "type": "session",
+          "type": "path",
           "style": "diamond",
           "leading_diamond": "\ue0b6",
           "trailing_diamond": "\ue0b0",
-          "template": " {{ .UserName }} ",
-          "background": "#37517A",
-          "foreground": "#E5E7EB"
-        },
-        {
-          "type": "path",
-          "style": "powerline",
-          "powerline_symbol": "\ue0b0",
           "template": "  {{ .Path }} ",
           "background": "#5C8AA6",
           "foreground": "#E5E7EB",
