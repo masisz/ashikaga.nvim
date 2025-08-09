@@ -3,7 +3,7 @@
 Other Languages  
 [🇯🇵](./README.ja.md)
 
-![ScreenShot](https://github.com/user-attachments/assets/241efe58-d38f-4328-927f-91a0a9843a63)
+![ScreenShot](https://github.com/user-attachments/assets/57e38997-1022-4047-bb73-98869a71adaf)
 
 ## 🎨Design
 
@@ -20,6 +20,12 @@ Also, I love [LazyVim](https://www.lazyvim.org). This color scheme is designed t
   - snacks
   - markdown
   - gitsigns
+- Extras colors(experimental)
+  - visual studio code
+  - oh my posh
+  - windows terminal
+  - ghostty
+  - alacritty
 
 ## 🚀Instllation
 

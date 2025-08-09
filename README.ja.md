@@ -3,7 +3,7 @@
 他言語  
 [🇺🇸](./README.md)
 
-![ScreenShot](https://github.com/user-attachments/assets/241efe58-d38f-4328-927f-91a0a9843a63)
+![ScreenShot](https://github.com/user-attachments/assets/57e38997-1022-4047-bb73-98869a71adaf)
 
 ## 🎨デザイン
 
@@ -20,6 +20,12 @@
   - snacks
   - markdown
   - gitsigns
+- 以下のアプリケーションについても実験的にカラースキームを提供しています。
+  - visual studio code
+  - oh my posh
+  - windows terminal
+  - ghostty
+  - alacritty
 
 ## 🚀インストール
 
