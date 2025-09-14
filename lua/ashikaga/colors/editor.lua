@@ -22,6 +22,8 @@ function M.setup()
 	util.highlight("Identifier", { fg = color.ask.omugi_gold })
 	util.highlight("Delimiter", { fg = color.ask.white })
 	util.highlight("MatchParen", { fg = color.ask.orihime_red, bold = true })
+	util.highlight("LineNr", { fg = color.ask.light_gray })
+	util.highlight("CursorLineNr", { fg = color.ask.white, bold = true })
 	util.highlight("StatusLine", { bg = transparent_bg })
 	util.highlight("StatusLineNC", { bg = transparent_bg })
 end
