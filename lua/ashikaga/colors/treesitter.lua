@@ -5,12 +5,13 @@ function M.setup()
 	local color = require("ashikaga.lib.base_color")
 
 	-- code
-	util.highlight("@field", { fg = color.ask.omugi_gold })
+	util.highlight("@field", { fg = color.ask.sky }) -- properties and fields
 	util.highlight("@property", { fg = color.ask.sky })
 	util.highlight("@method", { fg = color.ask.watarase_blue })
-	util.highlight("@type", { fg = color.ask.omugi_gold })
-	util.highlight("@constructor", { fg = color.ask.omugi_gold })
-	util.highlight("@class", { fg = color.ask.omugi_gold })
+	util.highlight("@type", { fg = color.ask.flower_fuji }) -- changed from omugi_gold to flower_fuji for better distinction
+	util.highlight("@type.builtin", { fg = color.ask.flower_fuji })
+	util.highlight("@constructor", { fg = color.ask.watarase_blue }) -- changed from omugi_gold for better distinction
+	util.highlight("@class", { fg = color.ask.flower_fuji }) -- changed from omugi_gold to flower_fuji
 	util.highlight("@variable", { fg = color.ask.white })
 	util.highlight("@variable.builtin", { fg = color.ask.orihime_red })
 	util.highlight("@variable.parameter", { fg = color.ask.omugi_gold })
@@ -25,8 +26,8 @@ function M.setup()
 
 	local todo = { fg = color.ask.white, bg = color.ask.watarase_blue }
 	local note = { fg = color.ask.white, bg = color.ask.flower_fuji }
-	local warning = { fg = color.ask.white, bg = color.ask.omugi_gold }
-	local error = { fg = color.ask.white, bg = color.ask.orihime_red }
+	local warning = { fg = color.ask.white, bg = color.ask.warning_orange } -- changed to dedicated warning color
+	local error = { fg = color.ask.white, bg = color.ask.error_red } -- changed to dedicated error color
 
 	-- comment
 	util.highlight("@comment.todo", todo)
